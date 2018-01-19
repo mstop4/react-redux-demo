@@ -1,0 +1,7 @@
+{
+  "name": "gml-script-template-generator",
+  "version": "1.0.0",
+  "description": "GML Script Template Generator ",
+  "main": "index.js",
+  "license": "MIT"
+}
