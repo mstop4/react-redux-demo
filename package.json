@@ -3,5 +3,10 @@
   "version": "1.0.0",
   "description": "GML Script Template Generator ",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "path": "^0.12.7",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
+  }
 }
