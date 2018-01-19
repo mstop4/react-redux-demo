@@ -6,7 +6,7 @@ class FormContainer extends Component {
     super()
 
     this.state = {
-      seo_title: ''
+      title: ''
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -17,15 +17,15 @@ class FormContainer extends Component {
   }
 
   render() {
-    const { seo_title } = this.state
+    const {title} = this.state
     return (
       <form id="article-form">
         <Input
           text="Text Box!"
-          label="seo_Title"
+          label="title"
           type="text"
-          id="seo_Title"
-          value={seo_title}
+          id="title"
+          value={title}
           handleChange={this.handleChange}
         />
       </form>
