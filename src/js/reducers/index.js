@@ -1,17 +1,17 @@
-import { ADD_ARTICLE } from '../constants/action-types'
+import { ADD_MESSAGE } from '../constants/action-types'
 
 const initialState = {
-  articles: []
+  messages: []
 }
 
 const rootReducer = (state = initialState, action) => {
   
   switch (action.type) {
     
-    case ADD_ARTICLE:
+    case ADD_MESSAGE:
       return {
         ...state,
-        articles: [...state.articles, action.payload]
+        messages: [...state.messages, action.payload]
       }
 
     default:

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import uuidv1 from 'uuid'
-import { addArticle } from '../actions/index'
+import { addMessage } from '../actions/index'
 
 const mapDispatchToProps = dispatch => {
   return {
-    addArticle: article => dispatch(addArticle(article))
+    addMessage: message => dispatch(addMessage(message))
   }
 }
 
@@ -29,7 +29,7 @@ class ConnectedForm extends Component {
     event.preventDefault();
     const { title } = this.state
     const id = uuidv1()
-    this.props.addArticle({ title, id })
+    this.props.addMessage({ title, id })
     this.setState ({ title: '' })
   }
 
