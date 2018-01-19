@@ -4,9 +4,13 @@
   "description": "React Redux Demo",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mstop4/react-redux-demo.git"
+  },
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack-dev-server --config webpack.prod.js"
+    "build": "./node_modules/.bin/webpack --config webpack.prod.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
